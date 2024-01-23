@@ -1,12 +1,2 @@
-I made a 'Technical Skills' part in the home tab, and lots of other little adjustments which include:
-
--Cursors
-
--Back button for about tab
-
--Website Logo
-
--Wrote paragraphs for the first two about Tabs
-
--I fixed the bug where "if you tried to cycle through the abouts tabs a second time it wouldnt work properly"
+Done! Version 1 v.1
 

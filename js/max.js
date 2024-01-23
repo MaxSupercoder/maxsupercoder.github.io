@@ -38,11 +38,13 @@ var ii = 1;
 					document.getElementById("settingsTab").style.display = "none";
 					document.getElementById("settingsButton").style.color = "white";
 					document.getElementById("portfolioButton").style.color = "white";
+					document.getElementById("contactButton").style.color = "white";
 					document.getElementById("projectsButton").style.color = "white";
 					document.getElementById("portfolio").style.display = "none";
 					document.getElementById("creditsTab").style.display = "none";
 					document.getElementById("creditsButton").style.color = "white";
 					document.getElementById("projects").style.display = "none";
+					document.getElementById("contactPage").style.display = "none";
 					document.getElementById("aboutTabII").style.display = "none";
 					document.getElementById("aboutTabIII").style.display = "none";
 					document.getElementById("aboutTabIIb").style.display = "none";
@@ -51,12 +53,13 @@ var ii = 1;
 					document.getElementById("projectsButton").style.cursor = "pointer";
 					document.getElementById("creditsButton").style.cursor = "pointer";
 					document.getElementById("settingsButton").style.cursor = "pointer";
+					document.getElementById("contactButton").style.cursor = "pointer";
 					//document.write(i);
                     document.getElementById(i.id).style.color = "gray";
 					document.getElementById(ii).style.display = "block";
 					document.getElementById("aboutWebsite").className = "aboutWebsite";
 					j = 0;
-					document.getElementById(i.id).style.cursor = "not-allowed";
+					document.getElementById(i.id).style.cursor = "grabbing";
 				}
 			}
 			
@@ -126,4 +129,8 @@ var ii = 1;
 			{
 				document.getElementById(x).className = "b";	
 				document.getElementById(x).style.display = "block";
-			}			
+			}	
+
+            function pop() {
+				document.getElementById("de").innerHTML = "Too Bad!";
+            }			
