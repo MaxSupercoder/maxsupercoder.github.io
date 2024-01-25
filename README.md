@@ -18,11 +18,11 @@ I chose to go for a simple, elegant design with a clean aesthetic.
 **Features**
 
 Home page – This includes a simple blurb ‘about me.’
-	Next tab – Provides some basic education information and a ‘Technical skills’ section (this is not accurate at the moment, it is something that I can correct at the end of this course and in the future).
+Next tab – Provides some basic education information and a ‘Technical skills’ section (this is not accurate at the moment, it is something that I can correct at the end of this course and in the future).
 
-	Second Next tab – This is a place holder for more information on education and/or skills that I will develop in the future.
+Second Next tab – This is a place holder for more information on education and/or skills that I will develop in the future.
 
-	Third Next tab – this takes you back to the home page.
+Third Next tab – this takes you back to the home page.
 
 Contact - I have not filled in email or phone number since I dont like spam.
 
