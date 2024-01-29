@@ -1,0 +1,318 @@
+<!--CSS is not as fun as JavaScript-->
+		    .all 
+		    {
+		        background-color: white;
+			    color: white;
+		    }
+			
+			p 
+			{
+				overflow-y: scroll;
+				overflow: -moz-scrollbars-none;
+			}
+			
+			p::-webkit-scrollbar 
+			{
+				display: none;
+			}
+		    
+			.header
+			{
+			    padding: 60px;
+                text-align: center;
+                font-size: 5vw;
+				top: 0%;
+				width: 100%;
+				position: absolute;
+				left: 0px;
+				height: 30px;
+				color: white;
+				background: black;
+				box-shadow: 3px 3px 50px black;
+				animation-name: headawa;
+				animation-duration: 1.5s;
+			}
+			
+			.footer
+			{
+			    padding: 60px;
+                text-align: center;
+                font-size: 5vw;
+				bottom: 0%;
+				width: 100%;
+				position: absolute;
+				left: 0px;
+				height: 30px;
+				color: white;
+				background: black;
+				box-shadow: 3px 3px 50px black;
+				animation-name: footawa;
+				animation-duration: 1.5s;
+			}
+			
+			.aboutWebsite
+			{
+				left: 10px;
+				top: 200px;
+				position: absolute;
+				height: 510px;
+				width: 300px;
+				text-align: center;
+                width: 20%;
+                border-radius: 10px;
+				font-family: courier;
+				color: white;
+				background: black;
+				box-shadow: 3px 3px 50px black;
+				animation-name: awawa;
+				animation-duration: 1.5s;
+			}
+			
+			.btWbst
+			{
+				left: 10px;
+				top: 200px;
+				position: absolute;
+				height: 510px;
+				width: 300px;
+				text-align: center;
+                width: 20%;
+                border-radius: 10px;
+				font-family: courier;
+				color: white;
+				background: black;
+				box-shadow: 3px 3px 50px black;
+				animation-name: btWbstAnimation;
+				animation-duration: 3s;
+			}
+			
+			.b
+			{
+				left: 10px;
+				top: 200px;
+				position: absolute;
+				height: 510px;
+				width: 300px;
+				text-align: center;
+                width: 20%;
+                border-radius: 10px;
+				font-family: courier;
+				color: white;
+				background: black;
+				box-shadow: 3px 3px 50px black;
+				animation-name: bWbstAnimation;
+				animation-duration: 3s;
+			}
+			
+			.cstyle
+			{
+				left: 10px;
+				top: 200px;
+				position: absolute;
+				height: 510px;
+				width: 300px;
+				text-align: center;
+                width: 90%;
+                border-radius: 10px;
+				font-family: courier;
+				color: white;
+				background: black;
+				box-shadow: 3px 3px 50px black;
+				animation-name: cawa;
+				animation-duration: 3s;
+			}
+			
+			.aboutWebsiteII
+			{
+				left: 400px;
+				top: 200px;
+				position: absolute;
+				height: 510px;
+				width: 300px;
+				text-align: center;
+                width: 20%;
+                border-radius: 10px;
+				font-family: courier;
+				color: white;
+				background: black;
+				box-shadow: 3px 3px 50px black;
+				animation-name: awawawa;
+				animation-duration: 3s;
+			}
+			
+			.wobbly::-webkit-scrollbar
+			{
+				display: none;
+			}
+			
+			.wobbly
+			{
+				
+			}
+			
+			.aboutWebsite::-webkit-scrollbar
+			{
+				display: none;
+			}
+			
+			.aboutWebsiteII::-webkit-scrollbar
+			{
+				display: none;
+			}
+			
+			.aboutWebsiteIII::-webkit-scrollbar
+			{
+				display: none;
+			}
+			
+			.aboutWebsiteIII
+			{
+				left: 790px;
+				top: 200px;
+				position: absolute;
+				height: 510px;
+				width: 300px;
+				text-align: center;
+                width: 20%;
+                border-radius: 10px;
+				font-family: courier;
+				color: white;
+				background: black;
+				box-shadow: 3px 3px 50px black;
+				animation-name: awawawawa;
+				animation-duration: 1s;
+			}
+			
+			#myProgress {
+                width: 400px;
+				margin-left: 50px;
+                background-color: white;
+				position: relative;
+				border-radius: 5px;
+            }
+
+            #myBar {
+                width: 50px;
+                height: 30px;
+                background-color: gray;
+                text-align: center;
+                line-height: 30px;
+                color: white;
+				border-radius: 5px;
+            }
+			
+			@keyframes btWbstAnimation
+			{
+				from {top : 200px;}
+				to {top: -800px;}
+			}
+			
+			@keyframes bWbstAnimation
+			{
+				from {top : 200%;}
+				to {top: 200px;}
+			}
+			
+			@keyframes footawa 
+			{
+			    from {bottom: -500px;}
+				to {bottom: 0%;}
+			}
+			
+			@keyframes cawa 
+			{
+			    from {top: -500px;}
+				to {top: 200px;}
+			}
+			
+			@keyframes headawa 
+			{
+			    from {top: -500px;}
+				to {top: 0%;}
+			}
+			
+			@keyframes awawa
+			{
+			    from {left: 110%; rotate: z 359deg;}
+				to {left: 10px; rotate: z 0deg;}
+			}
+			
+			@keyframes awawawa
+			{
+			    from {left: 110%; rotate: z 359deg;}
+				to {left: 400px; rotate: z 0deg;}
+			}
+			
+			@keyframes awawawawa
+			{
+			    from {left: 110%; rotate: z 359deg;}
+				to {left: 790px; rotate: z 0deg;}
+			}
+			
+			@keyframes txtAnim
+			{
+			    from {opacity: 0;}
+				to {opacity: 100;}
+			}
+			
+			
+			
+			.aboutWebsite:hover
+			{
+				color: white;
+				left: 10px;
+				top: 200px;
+				position: absolute;
+				opacity: 1;
+				font-family: courier;
+			}
+		  
+		    .img 
+		    {
+		        width: 100%;
+                height: 100%;
+				object-fit: cover;
+		    }
+			
+			body, html
+			{
+			    height: 100%;
+				width: 100%;
+				margin: 0;
+			}
+			
+			.actvScrn
+			{
+			    color: gray;
+			}
+			
+			.unActvScrn
+			{
+			    color: white;
+			}
+			
+			a
+			{
+				color: white;
+			}
+			
+			::-webkit-scrollbar-thumb 
+			{
+              background: #888;
+            }
+			
+			.rocket
+			{
+				display: block;
+				left: 40%;
+				position: absolute;
+				animation-name: flyup;	
+				animation-duration: 15s;
+		    }
+			
+			@keyframes flyup
+			{
+				from {bottom: -50px;}
+				to {top: -50px;}
+			}
+			

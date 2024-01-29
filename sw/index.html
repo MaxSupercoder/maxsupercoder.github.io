@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	</head>
+    <body class="all">
+	    <style>
+		    .imgC
+			{
+			    width: 200px;
+				
+			}
+			
+		    .all
+			{
+			    border: none;
+				background-color: black;
+				color: white;
+				font-family: arial;
+				font-size: 20px;
+				text-decoration: none;
+				list-style-type: none;
+			}
+			
+			.allX
+			{
+			    border: none;
+				background-color: black;
+				color: red;
+				font-family: arial;
+				font-size: 20px;
+				text-decoration: none;
+				list-style-type: none;
+			}
+		</style>
+		<div id="searchPage">
+		    <input type="text" id="myInput" onkeyup="search()" class="all" placeholder="...">
+		
+		    <ul id="myUL" class="all">
+			    <li class="all"><p onclick="show(aWing)">A-Wing</p></li>
+				<li class="all"><p onclick="show(bWing)">B-Wing</p></li>
+				<li class="all"><p onclick="show(ghost)">Ghost</p></li>
+				<li class="all"><p onclick="show(jSI)">Jedi_Starfighter_I</p></li>
+				<li class="all"><p onclick="show(jSII)">Jedi_Starfighter_II</p></li>
+				<li class="all"><p onclick="show(lambda)">Lambda_Shuttle</p></li>
+				<li class="all"><p onclick="show(falcon)">Millenium_Falcon</p></li>
+				<li class="all"><p onclick="show(nI)">N-1_Starfighter</p></li>
+				<li class="all"><p onclick="show(razorCrest)">Razor_Crest</p></li>
+				<li class="allX"><p onclick="show(slaveI)">Slave 1</p></li>
+				<li class="allX"><p onclick="show(snowSpeeder)">Snow_Speeder</p></li>
+				<li class="allX"><p onclick="show(starDestroyer)">Star Destroyer</p></li>
+				<li class="allX"><p onclick="show(tantive)">Tantive_IV</p></li>
+				<li class="allX"><p onclick="show(tieFighter)">TIE_Fighter</p></li>
+                <li class="all"><p onclick="show(uWing)">U-Wing</p></li>
+				<li class="allX"><p onclick="show(yWing)">Y-Wing</p></li>
+				<li class="allX"><p onclick="show(xWing)">X-Wing</p></li>
+                
+            </ul>
+			<p id="output"></p>
+		</div>
+		
+		<div id="infoPage" style="display: none;">
+		    <img id="img" src="" class="imgC">
+			<span id="info"></span>
+		</div>
+		
+        <script>
+		
+		
+			function show(i)
+			{
+			    document.getElementById("searchPage").style.display = "none";
+				document.getElementById("infoPage").style.display = "block";
+				document.getElementById("img").src = i.img;
+				document.getElementById("info").innerHTML = "<br>" + "Model --------------------- " + i.model + "<br>" + "Manufacturer ------------ " + i.maker + "<br>" + "Type ----------------------- " + i.type + "<br>" + "Cost ----------------------- " + i.cost + "<br>" + "Max Acceleration ------- " + i.speed + "<br>" + "Minimum Crew ---------- " + i.crew + "<br>" + "Passengers ---------------- " + i.pas + "<br>" + "Cargo ------------------------ " + i.cargo;
+			}
+		
+		
+		
+		    function search() {
+			    var input = document.getElementById("myInput").value;
+				
+				if(input[0] === "#")
+				{
+				    input = input.substr(1);
+				} else {
+				
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("p")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                    } else {
+                    li[i].style.display = "none";
+                    }
+                    }
+				}	
+            } 
+		</script>
+		
+		
+		<!-- Data -->
+		<script>
+		
+		    const uWing = {
+		        model: "UT-60D",
+				maker: "Incom Corporation",
+				type: "Gunship",
+				speed: "90 MGLT",
+				cost: "65,000 credits",
+				crew : "1-2",
+				pas : "8",
+				cargo: "_",
+				img : "https://static.wikia.nocookie.net/starwars/images/d/d6/UwingFighterConfig-ROOCE.png/revision/latest?cb=20230802003300"
+			};
+			
+			const aWing = {
+			    model: "RZ-1",
+                maker: "Kuat_Systems_Engineering",
+                type: "Interceptor",
+				speed: "120 MGLT",
+				cost: "175,000 credits",
+				crew : "1",
+				pas : "0",
+				cargo: "40kg",
+				img : "https://static.wikia.nocookie.net/starwars/images/8/8d/A-wing_DICE.png/revision/latest/scale-to-width-down/500?cb=20161021230115" 				
+			};
+			
+			const bWing = {
+			    model: "SF-01B",
+                maker: "Slayn_and_Korpil",
+                type: "Heavy_Assault",
+				speed: "91 MGLT",
+				cost: "220,000 credits",
+				crew : "1-2 (Pilot, Co-Pilot)",
+				pas : "0",
+				cargo: "_",
+				img : "https://static.wikia.nocookie.net/starwars/images/9/9f/B-wing-Squadronds.png/revision/latest?cb=20210722003428" 				
+			};
+			
+			const ghost = {
+			    model: "VCX-100",
+				maker: "Corellian_Engineering_Corporation",
+				type: "Light_Freighter",
+				speed: "50 MGLT",
+				cost: "155,000 credits",
+				crew: "1-3 (Pilot, Co-Pilot, Gunner)",
+				pas : "6",
+				cargo : "180,000kg",
+				img : "https://static.wikia.nocookie.net/starwars/images/4/4c/The_Ghost_USW_NE.png/revision/latest/scale-to-width-down/500?cb=20230522003038"
+			};
+			
+			const jSI = {
+			    model: "Delta-7_Aethersprite",
+				maker: "Kuat_Systems_Engineering",
+				type: "Starfighter",
+				speed: "110 MGLT",
+				cost: "180,000 credits",
+				crew: "1-2 (Pilot, Astromech_Droid)",
+				pas : "0",
+				cargo : "60kg",
+				img : "https://static.wikia.nocookie.net/starwars/images/7/79/Jedi_Starfighter_EpII.png/revision/latest/scale-to-width-down/500?cb=20150722030412"
+			};
+			
+			const jSII = {
+			    model: "Eta-2_Actis",
+				maker: "Kuat_Systems_Engineering",
+				type: "Light_Interceptor",
+				speed: "118 MGLT",
+				cost: "290,000 credits",
+				crew: "1-2 (Pilot, Astromech_Droid)",
+				pas : "0",
+				cargo : "_",
+				img : "https://static.wikia.nocookie.net/starwars/images/0/04/Eta-2JediInterceptor-USC.png/revision/latest?cb=20190604144353"
+			};
+			
+			const lambda = {
+			    model: "Lambda-class_T-4a",
+				maker: "Cygnus_Spaceworks",
+				type: "Transport",
+				speed: "54 MGLT",
+				cost: "100,000 credits",
+				crew: "2 (Pilot, Co-Pilot)",
+				pas : "9",
+				cargo : "100,000",
+				img : "https://static.wikia.nocookie.net/starwars/images/9/90/Millennium_Falcon_DICE.png/revision/latest/scale-to-width-down/500?cb=20161022010825"
+			};
+			
+			const falcon = {
+			    model: "YT-1300fp",
+				maker: "Corellian_Engineering_Corporation",
+				type: "Light_Freighter",
+				speed: "75 MGLT",
+				cost: "140,000 credits",
+				crew: "1-2 (Pilot, Co-Pilot)",
+				pas : "20",
+				cargo : "80,000",
+				img : "https://static.wikia.nocookie.net/starwars/images/9/90/Millennium_Falcon_DICE.png/revision/latest/scale-to-width-down/1000?cb=20161022010825"
+			};
+			
+			const nI = {
+			    model: "N-1",
+				maker: "Theed_Palace_Space_Vessel_Engineering_Corps",
+				type: "Starfighter",
+				speed: "95 MGLT",
+				cost: "200,000 credits",
+				crew: "1-2 (Pilot, Astromech_Droid)",
+				pas : "0",
+				cargo : "65kg",
+				img : "https://static.wikia.nocookie.net/starwars/images/d/d3/N-1_BF2.png/revision/latest/scale-to-width-down/499?cb=20170825000654"
+			};
+			
+			const razorCrest = {
+			    model: "ST-70 M-111",
+				maker: "_",
+				type: "Gunship",
+				speed: "60 MGLT",
+				cost: "_",
+				crew: "1",
+				pas : "4",
+				cargo : "40,000",
+				img : "https://static.wikia.nocookie.net/starwars/images/2/2e/RazorCrest-TSWB.png/revision/latest/scale-to-width-down/500?cb=20210727042448"
+			};
+			
+			const slaveI = {
+			    model: "",
+				maker: "",
+				type: "",
+				speed: "",
+				cost: "",
+				crew: "",
+				pas : "",
+				cargo : "",
+				img : ""
+			};
+			
+			
+		</script>
+    </body>
+</html>

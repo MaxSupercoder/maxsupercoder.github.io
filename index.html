@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html id="hi">
+    <head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Max Ang Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+    <body class="wobbly">	
+	    <img id="rocketship" src="https://media0.giphy.com/media/cmm34yxL3S1clnLI0T/giphy.gif?cid=6c09b952b9rbr9r6146yv7xgfrxgigfybyea0nbpcczfskzs&ep=v1_gifs_search&rid=giphy.gif&ct=s" class="rocket" style="display: none;">
+	    <img id="codeBackdrop" class="img"  src="https://alphagypsumboard.com/wp-content/uploads/2019/07/Background-website-01-1024x687.jpg">
+	    <div style="display: block">
+		    
+		    <div class="header">
+			    <h5 style="font-family: courier; top: 30px; position: absolute; font-size: 20px; right: 200px; animation-name: txtAnim; color: white; cursor: pointer;" id="projectsButton" onclick="scrn(this, 'projects')">Other Projects</h5>
+				<h5 style="font-family: courier; top: 27px; position: absolute; font-size: 20px; right: 405px; animation-name: txtAnim; cursor: pointer;">.</h5>
+				<h5 style="font-family: courier; top: 30px; position: absolute; font-size: 20px; right: 450px; color: white; cursor: pointer;" id="portfolioButton" onclick="scrn(this, 'portfolio')">Portfolio</h5>
+				<h5 style="font-family: courier; top: 27px; position: absolute; font-size: 20px; right: 605px; animation-name: txtAnim; cursor: pointer;">.</h5>
+				<h5 style="font-family: courier; top: 30px; position: absolute; font-size: 20px; right: 665px; color: white; animation-name: txtAnim; cursor: pointer;" id="contactButton" onclick="scrn(this, 'contactPage')">Contact</h5>
+				<h5 style="font-family: courier; top: 27px; position: absolute; font-size: 20px; right: 785px; animation-name: txtAnim; cursor: pointer;">.</h5>
+				<h5 style="font-family: courier; top: 30px; position: absolute; font-size: 20px; right: 845px; color: gray; animation-name: txtAnim; cursor: pointer;" id="homeButton" onclick="scrn(this, 'aboutWebsite')">Home</h5>
+			</div>
+			
+			<!--HOME-->
+		    <div id="aboutWebsite" class="aboutWebsite">
+			    <h5 style="font-size: 25px; animation-name: txtAnim;">Max Ang</h5><br><br>
+				<p style="animation-name: txtAnim;">My name is Max Ang, I am 13 years old. I am studying a front-end-development programming course, to learn html5 and css3, which you can see on the next page.</p>
+				<br><br> <p onclick="cycleHome()" style="cursor: pointer;" >Next</p>
+				
+			</div><!--2nd Tab-->
+			<div id="aboutTabII" class="aboutWebsite" style="display: none;">
+			    <h5 style="font-size: 25px; animation-name: txtAnim;">Education</h5><br><br>
+				<p style="animation-name: txtAnim;">I am currently enrolled with 'Home Education Queensland' and have recently completed year seven. My favourite subjects are Science, and Maths. <br><br>In my spare time I enjoy reading and researching about science and physics.</p>
+			    <br><p onclick="cycleHome()" style="cursor: pointer;" >Next</p>
+				<p onclick="cycleHome(1)" style="cursor: pointer;" >Back</p>
+				
+			</div><!--2nd About Tab Twirly Tab-->
+			<div id="aboutTabIIb" class="aboutWebsiteII" style="display: none; width: 500px">
+			    <h5 style="font-size: 25px; animation-name: txtAnim;">Technical Skills</h5>
+				
+				<!--Progress Bar JS-->
+				<p>Javascript</p>
+				<div id="myProgress">
+                    <div id="myBar" style="width: 85%;"><p style="font-weight: bold; color: white;">85%</p></div>
+                </div><br>
+				
+				<!--Progress Bar Html5-->
+				<p>Html5</p>
+				<div id="myProgress">
+                    <div id="myBar" style="width: 60%"><p style="font-weight: bold; color: white;">60%</p></div>
+                </div><br>
+				
+				<!--Progress Bar CSS3-->
+				<p>CSS3</p>
+				<div id="myProgress">
+                    <div id="myBar" style="width: 30%"><p style="font-weight: bold; color: white;">30%</p></div>
+                </div><br>
+				
+				<!--Progress Bar C++-->
+				<p>C++</p>
+				<div id="myProgress">
+                    <div id="myBar" style="width: 40%"><p style="font-weight: bold; color: white;">40%</p></div>
+                </div><br>
+				
+			</div><!--3rd Tab-->
+			<div id="aboutTabIII" class="aboutWebsite" style="display: none;">
+			    <h5 style="font-size: 25px; animation-name: txtAnim;">TGHIS IS MOOORRREE!!</h5><br><br>
+				<p style="animation-name: txtAnim;">Third Thing Here...</p><p onclick="cycleHome()" style="cursor: pointer;" >Next</p>
+				<p onclick="cycleHome(1)" style="cursor: pointer;" >Back</p>
+				
+			</div>
+			
+			
+			
+			<!--SETTINGS-->
+			<div id="settingsTab" class="aboutWebsite" style="display: none;">
+			    <h5 style="font-size: 25px; ">Settings</h5><br><br>
+				<button style="text-decoration: none; decoration: none; border: none; Background: none; color: white; font-family: courier; font-size: 20px; cursor: pointer" onclick="Background()">Change Background</button>
+			</div>
+			
+			<!--PORTFOLIO-->
+			<div id="portfolio" style="display: none;">
+			    <div id="portfolioTabI" class="aboutWebsite">
+			        <h5 style="font-size: 25px; ">Mesopotamia Project</h5><br><br>
+					<a href="MESO/index.html" target="_blank">Link</a>
+					<p style="text-align: left; padding: 10px;">
+					    This is my Mesopotamia project that I made for a school assignment, in it is infomation about Mesopotamia and the flooding of the rivers. I made this around July 2022 and have since improved on my skills alot, it was one of my first html projects so it is very basic.
+					</p>
+			    </div>
+				
+				<div id="portfolioTabII" class="aboutWebsiteII" style="overflow-y: scroll; overflow: -moz-scrollbars-none;">
+			        <h5 style="font-size: 25px; ">Star Wars Data Base</h5><br><br>
+					<a href="sw/index.html" target="_blank">Link</a><br><br>
+					<p style="text-align: left; padding: 10px;">
+					    This is my most sophisticated database system I have made. I love programming javascript and making databases, which is why I made a <a style="text-decoration: underline;" href="stDtaBase/index.html">Star Trek Starship database</a> (see 'Other Projects' Tab) but it was very basic and very hard to add new data into it, so I started making a version 2, but instead I made a Star Wars one to be different. It has been alot of fun working on it and I hope to add new features like a query system and also better visual design aswell. (All the names in red do not have data in them)
+					</p>
+			    </div>
+				
+				<div id="portfolioTabIII" class="aboutWebsiteIII">
+			        <h5 style="font-size: 25px; ">Project 3</h5><br><br>
+					<p style="text-align: left; padding: 10px;">
+					    
+					</p>
+			    </div>
+			</div>
+			
+			<!--OTHER PROJECTS-->
+			<div id="projects" style="display: none;">
+			    <div id="projectsTabI" class="aboutWebsite">
+			        <h5 style="font-size: 25px; ">Project 4</h5><br><br>
+					
+			    </div>
+				
+				<div id="projectsTabII" class="aboutWebsiteII">
+			        <h5 style="font-size: 25px; ">Project 5</h5><br><br>
+					
+			    </div>
+				
+				<div id="projectsTabIII" class="aboutWebsiteIII">
+			        <h5 style="font-size: 25px; ">Project 6</h5><br><br>
+					
+			    </div>
+			</div>
+			
+			<!--CONTACT US-->
+			<div id="contactPage" class="aboutWebsite" style="display: none;">
+			    <h3>Contact Us</h3>
+				<br>
+				<br>
+				<h4>Phone Number: <br><br>04** *** ***</h4>
+				<br>
+				<br>
+				<br>
+				<h4>Email Adress: <br><br>max*******@gmail.com
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p onclick="pop()" id="de">Click if you want real contact details</p>
+				
+			</div>
+			
+			
+			<!--CREDITS-->
+			<div id="creditsTab" style="display: none; text-align: center;" class="cstyle"><br><br><br><br><br><br>
+			    <a href="https://www.istockphoto.com/vector/abstract-connecting-dots-and-lines-connection-digital-technology-background-vector-gm1060961384-283609750">Main Background Image - ISTOCK - WIYADA ARUNWAIKIT</a><br><br>
+				<a href="https://getisotope.com/background-pack">2nd Background Image - GETISOTOPE.COM</a><br><br>
+				<a href="https://www.favicon.cc/">Favicon Picture - Favicon.cc</a>
+			</div>
+			
+			
+			<!--FOOTER-->
+		    <div class="footer">
+		        <h5 style="font-family: courier; top: 30px; position: absolute; font-size: 20px; right: 810px; color: white; animation-name: txtAnim;" id="settingsButton" onclick="scrn(this, 'settingsTab')">Settings</h5>
+				<h5 style="font-family: courier; top: 30px; position: absolute; font-size: 20px; right: 1000px; color: white; animation-name: txtAnim;" id="creditsButton" onclick="scrn(this, 'creditsTab')">Credits</h5>
+		    </div>
+			
+		</div>
+		<link rel="stylesheet" type="text/css" href="css/maxx.css"/>
+		<script src="js/max.js"></script>
+	</body>
+</html>
